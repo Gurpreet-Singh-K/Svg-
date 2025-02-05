@@ -1,47 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .product-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .product {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-    width: 80px;
-    height: 80px;
-    transition: all 0.3s ease;
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease;
 }
 
 .product:hover img {
-    filter: invert(1); /* Invert the icon's color on hover */
+  filter: invert(1); /* Invert the icon's color on hover */
 }
 
 .product p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.heading {
+  flex-direction: column;
 }
